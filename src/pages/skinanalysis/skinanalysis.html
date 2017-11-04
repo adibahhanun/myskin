@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      Skin Analysis
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+ <ion-content class="card-background-page">
+
+    <ion-card>
+        <ion-card-header>
+          <b>Do you own a portable skin analyser?</b>
+        </ion-card-header>
+        <ion-card-content>
+          <img src="/assets/images/skinanalyser.jpg">
+          If yes, you can now use our application to determine your skin type based on your skin analyser reading!
+        </ion-card-content>
+        <ion-grid>
+            <ion-row class="ionrow">
+
+              <img id="image" [src]="srcImage" style="display:none"/>
+              <button ion-button float-right full (click)="presentActionSheet()">Analyse</button>
+            </ion-row>
+        </ion-grid>
+        
+      </ion-card>
+      <div align="center"><h1>OR</h1></div>
+      <ion-grid>
+          
+          <ion-row class="ionrow">
+              <ion-col width-70><button ion-button float-center full (click)="go_to_skinanalysisques()">Use our awesome skin type test!</button>
+              </ion-col></ion-row>
+          
+           </ion-grid>
+</ion-content>

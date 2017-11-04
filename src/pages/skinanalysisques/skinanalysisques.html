@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      Skin Analysis
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+ <ion-content class="card-background-page">
+    <p> 
+    <b>Baumann Skin Type Indicator (BSTI) questionnaire is used to classify individuals based on levels of sebum secretion when sebumeter is not available or accessible.<br>
+      <br>
+      Answer the following questions by choosing the answers that are closely related to you.</b><br><br>
+
+1. After washing your face, don’t apply any moisturizer, sunscreen, toner, powder or other products. Two to three hours later, look in a mirror under bright lights. Your forehead and cheeks feel or appear:<br>
+<input type="checkbox" name="dry" value="1" onClick="TEST(this);"  /> Very rough, flaky, or ashy<br />
+<input type="checkbox" name="dry" value="1" onClick="TEST(this);" /> Tight<br />
+<input type="checkbox" name="normal" value="2" onClick="TEST(this);" /> No reflection of light, and well hydrated<br />
+<input type="checkbox" name="oily" value="4" onClick="TEST(this);" /> Shiny with reflection of bright light<br />
+<br>
+2. You would characterize your facial skin as:<br>
+<input type="checkbox" name="dry" value="1" onClick="TEST(this);"  /> Dry<br />
+<input type="checkbox" name="normal" value="2" onClick="TEST(this);" /> Normal<br />
+<input type="checkbox" name="combination" value="3" onClick="TEST(this);" /> Combination<br />
+<input type="checkbox" name="oily" value="4" onClick="TEST(this);" /> Oily<br />
+<br>
+3. Your face is oily in the T-zone (forehead and nose):<br>
+<input type="checkbox" name="dry" value="1" onClick="TEST(this);"  /> Never<br />
+<input type="checkbox" name="normal" value="2" onClick="TEST(this);" /> Sometimes<br />
+<input type="checkbox" name="combination" value="3" onClick="TEST(this);" /> Frequently<br />
+<input type="checkbox" name="oily" value="4" onClick="TEST(this);" /> Always<br />
+<br>
+4. You have clogged pores (blackheads or whiteheads):<br>
+<input type="checkbox" name="dry" value="1" onClick="TEST(this);"  /> Never<br />
+<input type="checkbox" name="normal" value="2" onClick="TEST(this);" /> Rarely<br />
+<input type="checkbox" name="combination" value="3" onClick="TEST(this);" /> Sometimes<br />
+<input type="checkbox" name="oily" value="4" onClick="TEST(this);" /> Always<br />
+<br>
+5. How soon is your face oily in the T-zone after washing?<br>
+<input type="checkbox" name="dry" value="1" onClick="TEST(this);"  /> Never<br />
+<input type="checkbox" name="normal" value="2" onClick="TEST(this);" /> 5 or more hours after washing<br />
+<input type="checkbox" name="combination" value="3" onClick="TEST(this);" /> 2 - 4 hours after washing<br />
+<input type="checkbox" name="oily" value="4" onClick="TEST(this);" /> 1 hour after washing<br />
+<input type="checkbox" name="oily" value="4" onClick="TEST(this);" /> All day<br />
+<br>
+6. How many times a day do you wash your face?<br>
+<input type="checkbox" name="dry" value="1" onClick="TEST(this);"  /> I do not wash my face every day<br />
+<input type="checkbox" name="dry" value="1" onClick="TEST(this);" /> 1 time<br />
+<input type="checkbox" name="normal" value="2" onClick="TEST(this);" /> 2 times<br />
+<input type="checkbox" name="oily" value="4" onClick="TEST(this);" /> 3 times<br />
+<input type="checkbox" name="oily" value="4" onClick="TEST(this);" /> 4 or more<br />
+Sebum Level: <span id="Totalcost"> </span><br>
+Skin Type: <span id="Skintype"> </span>
+</p>
+</ion-content>

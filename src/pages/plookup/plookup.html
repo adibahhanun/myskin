@@ -1,0 +1,113 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      Products Look-Up
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label>Sort by Skin Type</ion-label>
+    <ion-select cancelText="Close" [selectOptions]="selectOptions">
+      <ion-option value="d" (ionSelect)="go_to_dryproduct()">Dry</ion-option>
+      <ion-option value="n" (ionSelect)="go_to_normalproduct()">Normal</ion-option>
+      <ion-option value="c" (ionSelect)="go_to_combinationproduct()">Combination</ion-option>
+      <ion-option value="o" (ionSelect)="go_to_oilyproduct()">Oily</ion-option>
+    </ion-select>
+  </ion-item>
+
+    <ion-grid>
+        <ion-row>
+          <ion-col>
+            
+              <div style="background-color:white;border:1px solid black;padding:15px;font-size:10px;height:270px;">
+                          <b>Cleanser</b>
+                          <img src="/assets/images/combicleanser1.jpg">
+                          <b>Nutox Cleansing Foam</b><br>
+                          <b>Brand: </b>Nutox<br>
+                          <b>Type: </b>Foam Cleanser<br>
+                          <b>Price: </b>RM23.90<br>                        
+                          <br>
+                          <button ion-button primary (click)="go_to_nutoxcleanser()">Info</button>                      
+                        </div>
+              
+          </ion-col>
+          <ion-col>
+          
+            <div style="background-color:white;border:1px solid black;padding:15px;font-size:10px;height:270px;">
+              <b>Toner</b>
+              <img src="/assets/images/combitoner1.jpg">
+              <b>Nutox Astringent Toner</b><br>
+              <b>Brand: </b>Nutox<br>
+              <b>Price: </b>RM26.90<br>            
+              <br>
+              <button ion-button primary (click)="go_to_nutoxcleanser()">Info</button>                      
+            </div>
+                     
+          </ion-col>
+</ion-row><ion-row>
+          <ion-col>
+            
+            <div style="background-color:white;border:1px solid black;padding:15px;font-size:10px;height:270px;">              
+                <b>Moisturiser</b>
+                <img src="/assets/images/combimoisturizer1.jpg">
+                <b>Nutox Moisturising Lotion</b><br>
+                <b>Brand: </b>Nutox<br>
+                <b>Price: </b>RM46.90<br>
+                <br>
+                <button ion-button primary (click)="go_to_nutoxcleanser()">Info</button>                      
+              </div>
+                       
+            </ion-col>
+
+            <ion-col>
+              
+              <div style="background-color:white;border:1px solid black;padding:15px;font-size:10px;height:270px;">              
+                <b>Serum</b>
+                  <img src="/assets/images/combiserum1.jpg">
+                  <b>Nutox Advanced Serum Concentrate</b><br>
+                  <b>Brand: </b>Nutox<br>
+                  <b>Price: </b>RM79.90<br>            
+                  <br>
+                  <button ion-button primary (click)="go_to_nutoxcleanser()">Info</button>                      
+                </div>
+                         
+              </ion-col>
+            </ion-row><ion-row>
+              <ion-col>
+                
+                <div style="background-color:white;border:1px solid black;padding:15px;font-size:10px;height:270px;">              
+                  <b>Cream</b>
+                    <img src="/assets/images/combicream1.jpg">
+                    <b>Nutox Night Repair</b><br>
+                    <b>Brand: </b>Nutox<br>
+                    <b>Price: </b>RM53.90<br>          
+                    <br>
+                    <button ion-button primary (click)="go_to_nutoxcleanser()">Info</button>                      
+                  </div>
+                           
+                </ion-col>
+
+                <ion-col>
+                  
+                  <div style="background-color:white;border:1px solid black;padding:15px;font-size:10px;height:270px;">              
+                    <b>Cream</b>
+                      <img src="/assets/images/combicream1.jpg">
+                      <b>Nutox Night Repair</b><br>
+                      <b>Brand: </b>Nutox<br>
+                      <b>Price: </b>RM53.90<br>          
+                      <br>
+                      <button ion-button primary (click)="go_to_nutoxcleanser()">Info</button>                      
+                    </div>
+                             
+                  </ion-col>
+        </ion-row>
+      </ion-grid>
+
+</ion-content>

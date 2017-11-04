@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      mySkin
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+ <ion-content class="card-background-page">
+
+  <ion-card (click)="go_to_skinanalysis()">
+    <img src="assets/images/skinanalysis_big.jpg" height="150px" width="300px"/>
+    <div class="card-title">Skin Analysis</div>
+    <div class="card-subtitle">41 Listings</div>
+  </ion-card>
+
+  <ion-card (click)="go_to_plookup()">
+    <img src="assets/images/productslookup_big.jpg" height="150px" width="300px"/>
+    <div class="card-title">Products Look-Up</div>
+    <div class="card-subtitle">64 Listings</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/images/skintips.jpg" height="150px" width="300px"/>
+    <div class="card-title">Health and Beauty Tips</div>
+    <div class="card-subtitle">72 Listings</div>
+  </ion-card>
+
+</ion-content>
